@@ -1,136 +1,284 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @media only screen and (max-width: 600px) {
-            .signature-container {
-                max-width: 100% !important;
-                width: auto !important;
-            }
-            .signature-table {
-                width: 100% !important;
-            }
-            .name-column {
-                display: block !important;
-                width: 100% !important;
-                padding-right: 0 !important;
-                padding-bottom: 15px !important;
-                text-align: center !important;
-            }
-            .contact-column {
-                display: block !important;
-                width: 100% !important;
-                padding-right: 0 !important;
-                padding-bottom: 15px !important;
-                text-align: center !important;
-            }
-            .social-column {
-                display: block !important;
-                width: 100% !important;
-                text-align: center !important;
-            }
-            .social-icons {
-                justify-content: center !important;
-            }
-            .name {
-                font-size: 24px !important;
-            }
-            .title {
-                font-size: 14px !important;
-            }
-            .contact-info {
-                font-size: 13px !important;
-            }
+      @media only screen and (max-width: 600px) {
+        .signature-container {
+          max-width: 100% !important;
+          width: auto !important;
         }
-        
-        @media only screen and (max-width: 480px) {
-            .social-icons {
-                gap: 6px !important;
-            }
-            .social-icon {
-                width: 40px !important;
-                min-height: 60px !important;
-            }
-            .social-icon svg {
-                width: 18px !important;
-                height: 18px !important;
-            }
+        .signature-table {
+          width: 100% !important;
         }
+        .name-column {
+          display: block !important;
+          width: 100% !important;
+          padding-right: 0 !important;
+          padding-bottom: 15px !important;
+          text-align: center !important;
+        }
+        .contact-column {
+          display: block !important;
+          width: 100% !important;
+          padding-right: 0 !important;
+          padding-bottom: 15px !important;
+          text-align: center !important;
+        }
+        .social-column {
+          display: block !important;
+          width: 100% !important;
+          text-align: center !important;
+        }
+        .social-icons {
+          justify-content: center !important;
+        }
+        .name {
+          font-size: 24px !important;
+        }
+        .title {
+          font-size: 14px !important;
+        }
+        .contact-info {
+          font-size: 13px !important;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .social-icons {
+          gap: 6px !important;
+        }
+        .social-icon {
+          width: 40px !important;
+          min-height: 60px !important;
+        }
+        .social-icon svg {
+          width: 18px !important;
+          height: 18px !important;
+        }
+      }
     </style>
-</head>
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
-    <div class="signature-container" style="max-width: 600px; margin: 0; padding: 0;">
-        <table class="signature-table" cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; border-collapse: collapse; width: 100%;">
-            <tr>
-                <!-- Columna 1: Nombre y título -->
-                <td class="name-column" style="vertical-align: top; padding-right: 30px;">
-                    <div class="name" style="font-size: 28px; font-weight: bold; color: #333333; margin-bottom: 5px; line-height: 1.2;">
-                        Bryan Gonzalez
-                    </div>
-                    <div class="title" style="font-size: 16px; color: #666666; font-weight: normal;">
-                        Photographer
-                    </div>
+  </head>
+  <body style="margin: 0; padding: 0; font-family: Arial, sans-serif">
+    <div
+      class="signature-container"
+      style="max-width: 630px; margin: 0; padding: 0"
+    >
+      <!-- Tabla con fondo que incluye el "padding" como contenido visual -->
+      <table cellpadding="0" cellspacing="0" border="0" style="background-color: #fafafa; width: 100%;">
+        <tr>
+          <td style="padding: 15px; width: 100%;">
+            <table
+              class="signature-table"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="
+                font-family: Arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              "
+            >
+        <tr>
+          <!-- Columna 1: Nombre y título -->
+          <td
+            class="name-column"
+            style="vertical-align: top; padding-right: 30px"
+          >
+            <div
+              class="name"
+              style="
+                font-size: 28px;
+                font-weight: bold;
+                color: #333333;
+                margin-bottom: 5px;
+                line-height: 1.2;
+              "
+            >
+              Bryan Gonzalez
+            </div>
+            <div
+              class="title"
+              style="font-size: 16px; color: #666666; font-weight: normal"
+            >
+              Photographer
+            </div>
+          </td>
+
+          <!-- Columna 2: Información de contacto -->
+          <td
+            class="contact-column"
+            style="vertical-align: top; padding-right: 30px"
+          >
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="width: 100%"
+            >
+              <tr>
+                <td style="padding-bottom: 6px">
+                  <img
+                    src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/phone.png"
+                    alt="Phone"
+                    style="
+                      width: 16px;
+                      margin-right: 10px;
+                      vertical-align: middle;
+                    "
+                  />
+                  <a
+                    href="tel:5622983596"
+                    style="
+                      font-size: 14px;
+                      color: #333333;
+                      text-decoration: none;
+                    "
+                    >562.298.3596</a
+                  >
                 </td>
-                
-                <!-- Columna 2: Información de contacto -->
-                <td class="contact-column" style="vertical-align: top; padding-right: 30px;">
-                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
-                        <tr>
-                            <td style="padding-bottom: 6px;">
-                                <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/phone.png" alt="Phone" style="width: 16px; height: 16px; margin-right: 10px; vertical-align: middle;">
-                                <a href="tel:5622983596" style="font-size: 14px; color: #333333; text-decoration: none;">562.298.3596</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-bottom: 6px;">
-                                <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/email.png" alt="Email" style="width: 16px; height: 16px; margin-right: 10px; vertical-align: middle;">
-                                <a href="mailto:hello@filmhouzz.com" style="font-size: 14px; color: #333333; text-decoration: none;">hello@filmhouzz.com</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/wordl.png" alt="Website" style="width: 16px; height: 16px; margin-right: 10px; vertical-align: middle;">
-                                <a href="https://www.filmhouzz.com" style="font-size: 14px; color: #333333; text-decoration: none;" target="_blank">www.filmhouzz.com</a>
-                            </td>
-                        </tr>
-                    </table>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 6px">
+                  <img
+                    src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/email.png"
+                    alt="Email"
+                    style="
+                      width: 16px;
+                      margin-right: 10px;
+                      vertical-align: middle;
+                    "
+                  />
+                  <a
+                    href="mailto:hello@filmhouzz.com"
+                    style="
+                      font-size: 14px;
+                      color: #333333;
+                      text-decoration: none;
+                    "
+                    >hello@filmhouzz.com</a
+                  >
                 </td>
-                
-                <!-- Columna 3: Iconos de redes sociales (no clickeables) -->
-                <td class="social-column" style="vertical-align: stretch; height: 100%;">
-                    <table cellpadding="0" cellspacing="0" border="0" style="height: 80px;">
-                        <tr>
-                            <!-- Instagram (clickeable) -->
-                            <td style="width: 50px; height: 80px;">
-                                <a href="https://www.instagram.com/filmhouzz/" target="_blank" style="width: 50px; height: 80px; background-color: #333333; display: table-cell; text-align: center; vertical-align: middle; border-radius: 6px; text-decoration: none;">
-                                    <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
-                                </a>
-                            </td>
-                            
-                            <td style="width: 8px;"></td>
-                            
-                            <!-- LinkedIn (clickeable) -->
-                            <td style="width: 50px; height: 80px;">
-                                <a href="https://www.linkedin.com/in/bryan-gonzalez-3b93b0226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="width: 50px; height: 80px; background-color: #333333; display: table-cell; text-align: center; vertical-align: middle; border-radius: 6px; text-decoration: none;">
-                                    <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/linke.png" alt="LinkedIn" style="width: 24px; height: 24px;">
-                                </a>
-                            </td>
-                            
-                            <td style="width: 8px;"></td>
-                            
-                            <!-- Facebook (clickeable) -->
-                            <td style="width: 50px; height: 80px;">
-                                <a href="https://web.facebook.com/filmhouzz" target="_blank" style="width: 50px; height: 80px; background-color: #333333; display: table-cell; text-align: center; vertical-align: middle; border-radius: 6px; text-decoration: none;">
-                                    <img src="https://raw.githubusercontent.com/cristianccgg/Gmail_signature/main/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/wordl.png"
+                    alt="Website"
+                    style="
+                      width: 16px;
+                      margin-right: 10px;
+                      vertical-align: middle;
+                    "
+                  />
+                  <a
+                    href="https://www.filmhouzz.com"
+                    style="
+                      font-size: 14px;
+                      color: #333333;
+                      text-decoration: none;
+                    "
+                    target="_blank"
+                    >www.filmhouzz.com</a
+                  >
                 </td>
-            </tr>
-        </table>
+              </tr>
+            </table>
+          </td>
+
+          <!-- Columna 3: Iconos de redes sociales (no clickeables) -->
+          <td
+            class="social-column"
+            style="vertical-align: stretch; height: 100%"
+          >
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="height: 80px"
+            >
+              <tr>
+                <!-- Instagram (clickeable) -->
+                <td style="width: 50px; height: 80px">
+                  <a
+                    href="https://www.instagram.com/filmhouzz/"
+                    target="_blank"
+                    style="
+                      width: 50px;
+                      height: 80px;
+                      background-color: #333333;
+                      display: table-cell;
+                      text-align: center;
+                      vertical-align: middle;
+                      border-radius: 6px;
+                      text-decoration: none;
+                    "
+                  >
+                    <img
+                      src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/instagram.png"
+                      alt="Instagram"
+                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                    />
+                  </a>
+                </td>
+
+                <td style="width: 8px"></td>
+
+                <!-- LinkedIn (clickeable) -->
+                <td style="width: 50px; height: 80px">
+                  <a
+                    href="https://www.linkedin.com/in/bryan-gonzalez-3b93b0226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank"
+                    style="
+                      width: 50px;
+                      height: 80px;
+                      background-color: #333333;
+                      display: table-cell;
+                      text-align: center;
+                      vertical-align: middle;
+                      border-radius: 6px;
+                      text-decoration: none;
+                    "
+                  >
+                    <img
+                      src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/linke.png"
+                      alt="LinkedIn"
+                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                    />
+                  </a>
+                </td>
+
+                <td style="width: 8px"></td>
+
+                <!-- Facebook (clickeable) -->
+                <td style="width: 50px; height: 80px">
+                  <a
+                    href="https://web.facebook.com/filmhouzz"
+                    target="_blank"
+                    style="
+                      width: 50px;
+                      height: 80px;
+                      background-color: #333333;
+                      display: table-cell;
+                      text-align: center;
+                      vertical-align: middle;
+                      border-radius: 6px;
+                      text-decoration: none;
+                    "
+                  >
+                    <img
+                      src="https://github.com/cristianccgg/Gmail_signature/raw/main/images/facebook.png"
+                      alt="Facebook"
+                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
+  </body>
 </html>
