@@ -51,12 +51,17 @@
 }
 
 .name {
-  font-size: 39px;
+  font-size: 40px;
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(40, 40, 40);
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
+  -moz-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  -webkit-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  -ms-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  letter-spacing: 0.5px;
   position: absolute;
   left: 64.876px;
   top: 30.36px;
@@ -65,13 +70,18 @@
 }
 
 .title {
-  font-size: 21.88px;
+  font-size: 22px;
   font-family: "Gilroy", Arial, sans-serif;
   color: rgb(40, 40, 40);
   line-height: 1.2;
   text-align: left;
+  -moz-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  -webkit-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  -ms-transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  transform: matrix(0.99912016856257, 0, 0, 0.99447550695998, 0, 0);
+  letter-spacing: 0.3px;
   position: absolute;
-  left: 54.624px;
+  left: 64.876px;
   top: 73.886px;
   z-index: 20;
   margin: 0;
