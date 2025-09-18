@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no" />
     <style>
       @media only screen and (max-width: 600px) {
         .signature-container {
@@ -43,6 +45,38 @@
         .contact-info {
           font-size: 13px !important;
         }
+      }
+
+      /* Estilos específicos para la app de Gmail */
+      .contact-column table {
+        width: auto !important;
+        min-width: 180px;
+      }
+      
+      .contact-column td {
+        white-space: nowrap !important;
+        display: table-cell !important;
+      }
+      
+      .name {
+        display: block !important;
+        white-space: nowrap !important;
+      }
+      
+      /* Forzar estabilidad en Gmail mobile */
+      [data-ogsc] .signature-container,
+      [data-ogsc] .signature-table,
+      [data-ogsc] .contact-column,
+      [data-ogsc] .name-column,
+      [data-ogsc] .social-column {
+        width: auto !important;
+        min-width: auto !important;
+      }
+      
+      [data-ogsc] .name,
+      [data-ogsc] .contact-column td {
+        white-space: nowrap !important;
+        display: inline-block !important;
       }
 
       @media only screen and (max-width: 480px) {
@@ -94,6 +128,7 @@
                 color: #333333;
                 margin-bottom: 5px;
                 line-height: 1.2;
+                white-space: nowrap;
               "
             >
               Bryan Gonzalez
@@ -109,16 +144,16 @@
           <!-- Columna 2: Información de contacto -->
           <td
             class="contact-column"
-            style="vertical-align: top; padding-right: 30px"
+            style="vertical-align: top; padding-right: 15px"
           >
             <table
               cellpadding="0"
               cellspacing="0"
               border="0"
-              style="width: 100%"
+              style="width: auto; min-width: 180px; table-layout: fixed;"
             >
               <tr>
-                <td style="padding-bottom: 6px">
+                <td style="padding-bottom: 6px; white-space: nowrap;">
                   <img
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/phone.png"
                     alt="Phone"
@@ -140,7 +175,7 @@
                 </td>
               </tr>
               <tr>
-                <td style="padding-bottom: 6px">
+                <td style="padding-bottom: 6px; white-space: nowrap;">
                   <img
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/email.png"
                     alt="Email"
@@ -162,7 +197,7 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td style="white-space: nowrap;">
                   <img
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/wordl.png"
                     alt="Website"
@@ -190,13 +225,13 @@
           <!-- Columna 3: Iconos de redes sociales (no clickeables) -->
           <td
             class="social-column"
-            style="vertical-align: stretch; height: 100%"
+            style="vertical-align: top; width: auto;"
           >
             <table
               cellpadding="0"
               cellspacing="0"
               border="0"
-              style="height: 80px"
+              style="height: 80px; width: auto;"
             >
               <tr>
                 <!-- Instagram (clickeable) -->
