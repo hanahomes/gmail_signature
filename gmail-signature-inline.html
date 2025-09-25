@@ -6,6 +6,11 @@
     <meta name="x-apple-disable-message-reformatting" />
     <meta name="format-detection" content="telephone=no" />
     <style>
+      /* Estilos base más pequeños para Gmail */
+      .signature-container {
+        max-width: 472px !important; /* 25% más pequeño que 630px */
+      }
+      
       @media only screen and (max-width: 600px) {
         .signature-container {
           max-width: 100% !important;
@@ -50,7 +55,7 @@
       /* Estilos específicos para la app de Gmail */
       .contact-column table {
         width: auto !important;
-        min-width: 180px;
+        min-width: 135px;
       }
       
       .contact-column td {
@@ -97,12 +102,12 @@
   <body style="margin: 0; padding: 0; font-family: Arial, sans-serif">
     <div
       class="signature-container"
-      style="max-width: 630px; margin: 0; padding: 0"
+      style="max-width: 472px; margin: 0; padding: 0"
     >
       <!-- Tabla con fondo que incluye el "padding" como contenido visual -->
       <table cellpadding="0" cellspacing="0" border="0" style="background-color: #fafafa; width: 100%;">
         <tr>
-          <td style="padding: 15px; width: 100%;">
+          <td style="padding: 11px; width: 100%;">
             <table
               class="signature-table"
               cellpadding="0"
@@ -118,12 +123,12 @@
           <!-- Columna 1: Nombre y título -->
           <td
             class="name-column"
-            style="vertical-align: top; padding-right: 30px"
+            style="vertical-align: top; padding-right: 22px"
           >
             <div
               class="name"
               style="
-                font-size: 28px;
+                font-size: 21px;
                 font-weight: bold;
                 color: #333333;
                 margin-bottom: 5px;
@@ -135,7 +140,7 @@
             </div>
             <div
               class="title"
-              style="font-size: 16px; color: #666666; font-weight: normal"
+              style="font-size: 12px; color: #666666; font-weight: normal"
             >
               Photographer
             </div>
@@ -144,29 +149,29 @@
           <!-- Columna 2: Información de contacto -->
           <td
             class="contact-column"
-            style="vertical-align: top; padding-right: 15px"
+            style="vertical-align: top; padding-right: 11px"
           >
             <table
               cellpadding="0"
               cellspacing="0"
               border="0"
-              style="width: auto; min-width: 180px; table-layout: fixed;"
+              style="width: auto; min-width: 135px; table-layout: fixed;"
             >
               <tr>
-                <td style="padding-bottom: 6px; white-space: nowrap;">
+                <td style="padding-bottom: 4px; white-space: nowrap;">
                   <img
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/phone.png"
                     alt="Phone"
                     style="
-                      width: 16px;
-                      margin-right: 10px;
+                      width: 12px;
+                      margin-right: 7px;
                       vertical-align: middle;
                     "
                   />
                   <a
                     href="tel:5622983596"
                     style="
-                      font-size: 14px;
+                      font-size: 10.5px;
                       color: #333333;
                       text-decoration: none;
                     "
@@ -175,20 +180,20 @@
                 </td>
               </tr>
               <tr>
-                <td style="padding-bottom: 6px; white-space: nowrap;">
+                <td style="padding-bottom: 4px; white-space: nowrap;">
                   <img
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/email.png"
                     alt="Email"
                     style="
-                      width: 16px;
-                      margin-right: 10px;
+                      width: 12px;
+                      margin-right: 7px;
                       vertical-align: middle;
                     "
                   />
                   <a
                     href="mailto:hello@filmhouzz.com"
                     style="
-                      font-size: 14px;
+                      font-size: 10.5px;
                       color: #333333;
                       text-decoration: none;
                     "
@@ -202,15 +207,15 @@
                     src="https://github.com/hanahomes/gmail_signature/raw/main/images/wordl.png"
                     alt="Website"
                     style="
-                      width: 16px;
-                      margin-right: 10px;
+                      width: 12px;
+                      margin-right: 7px;
                       vertical-align: middle;
                     "
                   />
                   <a
                     href="https://www.filmhouzz.com"
                     style="
-                      font-size: 14px;
+                      font-size: 10.5px;
                       color: #333333;
                       text-decoration: none;
                     "
@@ -231,17 +236,17 @@
               cellpadding="0"
               cellspacing="0"
               border="0"
-              style="height: 80px; width: auto;"
+              style="height: 60px; width: auto;"
             >
               <tr>
                 <!-- Instagram (clickeable) -->
-                <td style="width: 50px; height: 80px">
+                <td style="width: 37px; height: 60px">
                   <a
                     href="https://www.instagram.com/filmhouzz/"
                     target="_blank"
                     style="
-                      width: 50px;
-                      height: 80px;
+                      width: 37px;
+                      height: 60px;
                       background-color: #333333;
                       display: table-cell;
                       text-align: center;
@@ -253,21 +258,21 @@
                     <img
                       src="https://github.com/hanahomes/gmail_signature/raw/main/images/instagram.png"
                       alt="Instagram"
-                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                      style="width: 18px; height: 18px; vertical-align: middle; object-fit: contain"
                     />
                   </a>
                 </td>
 
-                <td style="width: 8px"></td>
+                <td style="width: 6px"></td>
 
                 <!-- LinkedIn (clickeable) -->
-                <td style="width: 50px; height: 80px">
+                <td style="width: 37px; height: 60px">
                   <a
                     href="https://www.linkedin.com/in/bryan-gonzalez-3b93b0226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     target="_blank"
                     style="
-                      width: 50px;
-                      height: 80px;
+                      width: 37px;
+                      height: 60px;
                       background-color: #333333;
                       display: table-cell;
                       text-align: center;
@@ -279,21 +284,21 @@
                     <img
                       src="https://github.com/hanahomes/gmail_signature/raw/main/images/linke.png"
                       alt="LinkedIn"
-                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                      style="width: 18px; height: 18px; vertical-align: middle; object-fit: contain"
                     />
                   </a>
                 </td>
 
-                <td style="width: 8px"></td>
+                <td style="width: 6px"></td>
 
                 <!-- Facebook (clickeable) -->
-                <td style="width: 50px; height: 80px">
+                <td style="width: 37px; height: 60px">
                   <a
                     href="https://web.facebook.com/filmhouzz"
                     target="_blank"
                     style="
-                      width: 50px;
-                      height: 80px;
+                      width: 37px;
+                      height: 60px;
                       background-color: #333333;
                       display: table-cell;
                       text-align: center;
@@ -305,7 +310,7 @@
                     <img
                       src="https://github.com/hanahomes/gmail_signature/raw/main/images/facebook.png"
                       alt="Facebook"
-                      style="width: 24px; height: 24px; vertical-align: middle; object-fit: contain"
+                      style="width: 18px; height: 18px; vertical-align: middle; object-fit: contain"
                     />
                   </a>
                 </td>
